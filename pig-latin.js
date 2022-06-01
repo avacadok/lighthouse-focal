@@ -3,16 +3,17 @@ const args = process.argv.slice(2); // .slice(2) remove the first two items on t
 
 let pigLatin = function(args) {
 
-    let newStr = "";
+  let newStr = "";
 
-    //create loop to go through all the strings 
-    for (let i = 0; i < args.length; i++) {
-      
-        newStr +=  args[i] + args[i][0] + "ay";
+  //create loop to go through all the strings
+  for (let i = 0; i < args.length; i++) {
+    //select the first letter of each word
+    let firstLetter = args[i][0];
+    //remove the first letter of the word; args[i] means first index of each word
+    let sliced = args[i].slice(1);
 
+    newStr += sliced + firstLetter + "ay ";
 
-    }
-
-    return newStr;
-}
+  } return newStr;
+};
 console.log(pigLatin(args));
