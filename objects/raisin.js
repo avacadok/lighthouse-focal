@@ -19,6 +19,15 @@ const raisinAlarm = function(cookie) {
 
 };
 
+// const raisinAlarmArray = function(cookies) {
+//   let result = [];
+
+//   for (let i = 0; i < cookies.length; i++) {
+
+//   }
+
+// };
+
 console.log(raisinAlarm(["🍫", "🍫", "🍇", "🍫"]));
 console.log(raisinAlarm(["🍫", "🍇", "🍫", "🍫", "🍇"]));
 console.log(raisinAlarm(["🍫", "🍫", "🍫"]));
