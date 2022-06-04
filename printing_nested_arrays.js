@@ -3,7 +3,7 @@
     if (Array.isArray(item)) {
      for (let i of item) {
        console.log(i)
-     } 
+     }
     } else {
       console.log(item);
     }
@@ -20,7 +20,7 @@ const printItems = function(array) {
       console.log(item);
     }
   });
-}
+};
 // //here is what the function is doing
 // printItem(["😎", ["💩", "🤗"], "😼", "😂"]) {
 
